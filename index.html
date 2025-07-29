@@ -3,28 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Dev</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="p-0 m-0">
-    <div class="nav flex flex-row justify-between items-center p-5">
-      <a href="#">
-        <img class="logo h-10 ml-30" src="./image/techjar-logo.png" alt="No picture found">
+    <div id="navbar" class=" flex flex-row justify-between items-center p-5 sticky top-0 bg-aqu-00">
+      <a href="#index.html">
+        <img class="logo h-30 ml-30 rounded-full" src="./image/flag.jpg" alt="No picture found">
       </a>
       <div class="flex flex-row gap-10">
-        <a class="text-[25px]" href="#">Home</a>
+        <a class="text-[25px]" href="#wwa">Home</a>
         <a class="text-[25px]" href="#">About us</a>
         <a class="text-[25px]" href="#">Service</a>
-        <a class="text-[25px]" href="#">Our Portfolio</a>
-        <a class="text-[25px]" href="#">Our team</a>
+        <a class="text-[25px]" href="#reason">Our Portfolio</a>
+        <a class="text-[25px]" href="#team">Our team</a>
       </div>
-      <a class="bg-green-300 p-4 mr-30 rounded-2xl" href="#">
+      <a class="bg-green-300 p-4 mr-30 rounded-2xl" href="#footer">
       Contact Us
       </a>
       </div>
 
-      <div class="flex flex-col  justify-center h-screen items-center gap-10 ">
-        <h1 class="flex text-7xl font-bold max-w-300 justify-center text-center">
-          Digital Innovation You Need to Build, Scale and Grow
+      <div class="bg-[url('./image/crew.png')] bg-fixed bg-cover flex flex-col scrolled justify-center h-screen items-center gap-10 ">
+        <h1 class="flex text-[50px] font-bold max-w-300 justify-center text-center">
+          If your goal is to become the King of the Pirates, then I refuse to lose to you!
         </h1>
         <div class="flex flex-row bg-green-600 pl-7 pr-7 rounded-full items-center justify-center ">
           <a class="flex text-4xl text-white"  href="#">
@@ -35,7 +36,7 @@
       </div>
 
 
-      <div class="wwa flex flex-row ml-50 mr-10 mb-30 ">
+      <div id="wwa" class="flex md:flex-row flex-col mx-20 mb-30 ">
         <div class="flex flex-col gap-10">
           <h1 class="text-5xl font-bold">
           Who We Are
@@ -44,7 +45,7 @@
           Tech Jar Pvt. Ltd. is a leading It outsourcing company dedicated to providing cutting-edge solutions tailored to meet the unique needs of our clients. With a team of skilled professionals, we strive to exceed expectations and deliver excellence in every project.
         </h7>
         </div>
-          <img class="h-130 mr-50" src="./image/ppl.png" alt="">
+          <img class="md:h-120" src="./image/ppl.png" alt="">
       </div>
 
 
@@ -63,7 +64,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-20">
+      <div id="reason" class="flex flex-col gap-20">
         <h1 class="flex justify-center text-[50px] font-[1000]">
           The reasons to choose Us
         </h1>
@@ -140,7 +141,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-3 ml-50 mr-50 gap-10 mb-30" >
+      <div id="team" class="grid grid-cols-3 ml-50 mr-50 gap-10 mb-30" >
         <div class="flex flex-col items-center">
           <img class="w-90 rounded-full" src="./image/luffy.jpeg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
@@ -202,7 +203,7 @@
         </div>
       </div>
 
-        <div class="flex flex-row pt-10 pb-10 w-full justify-between bg-black">
+        <div id="footer" class="flex flex-row pt-10 pb-10 w-full justify-between bg-black">
           <img class="h-10 ml-50" src="image/techjar-logo.png" alt="">
           <div>
           </div>
@@ -230,40 +231,6 @@
             </div>
           </div>
         </div>
-
-        <div class="flex flex-row pt-10 pb-10 w-full justify-between bg-black">
-          <img class="h-10 ml-50" src="image/techjar-logo.png" alt="">
-          <div>
-
-          </div>
-          <div class="flex flex-col gap-3">
-            <h1 class="text-[30px] font-[700] text-white">
-              Quick Links
-            </h1>
-            <div class="flex flex-col ">
-              <a class="text-[18px] text-white" href="#">Home</a>
-              <a class="text-[18px] text-white" href="#">Who we are</a>
-              <a class="text-[18px] text-white" href="#">What we do</a>
-              <a class="text-[18px] text-white" href="#">Reasons to choose us</a>
-              <a class="text-[18px] text-white" href="#">Our Portfolio</a>
-              <a class="text-[18px] text-white" href="#">Our team</a>
-            </div>
-          </div>
-
-          <div class="flex flex-col mr-50 gap-3">
-            <h1 class="text-[30px] font-[700] text-white">
-              Contact
-            </h1>
-            <div>
-              <h1 class="text-white text-[18px]">-9849695781</h1>
-              <p class="text-white text-[18px]">-banmala@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        
-        
-      
-
     <script src="script.js"></script>
       </body>
       </html>
