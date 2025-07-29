@@ -7,19 +7,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="p-0 m-0">
-    <div id="navbar" class=" flex flex-row justify-between items-center p-5 sticky top-0 bg-aqu-00">
-      <a href="#index.html">
-        <img class="logo h-30 ml-30 rounded-full" src="./image/flag.jpg" alt="No picture found">
+    <img id="scroll" class="h-40 hidden fixed bottom-6 right-6 " src="./image/arro.png" alt="">
+    <div id="navbar" class=" flex flex-row justify-between items-center p-5 sticky top-0">
+      <div class="flex flex-col items-center ml-30 bg-black rounded-2xl">
+        <a href="#index.html">
+        <img class="logo h-25 rounded-full" src="./image/flag.jpg" alt="No picture found">
       </a>
-      <div class="flex flex-row gap-10">
-        <a class="text-[25px]" href="#wwa">Home</a>
-        <a class="text-[25px]" href="#">About us</a>
-        <a class="text-[25px]" href="#">Service</a>
-        <a class="text-[25px]" href="#reason">Our Portfolio</a>
-        <a class="text-[25px]" href="#team">Our team</a>
+      <h1 class="text-white">Strawhats</h1>
       </div>
-      <a class="bg-green-300 p-4 mr-30 rounded-2xl" href="#footer">
+      
+      <div class="flex flex-row gap-10">
+        <a class="text-[20px]" href="#">Home</a>
+        <a class="text-[20px]" href="#wwa">About us</a>
+        <a class="text-[20px]" href="#what-wd">Service</a>
+        <a class="text-[20px]" href="#reason">Our Portfolio</a>
+        <a class="text-[20px]" href="#team">Our team</a>
+      </div>
+      <a class="bg-black font-[500] p-4 mr-30 rounded-2xl " href="#footer">
+        <h1 class="text-white text-[25px]">
       Contact Us
+        </h1>
       </a>
       </div>
 
@@ -28,7 +35,7 @@
           If your goal is to become the King of the Pirates, then I refuse to lose to you!
         </h1>
         <div class="flex flex-row bg-green-600 pl-7 pr-7 rounded-full items-center justify-center ">
-          <a class="flex text-4xl text-white"  href="#">
+          <a class="flex text-4xl font-[500] text-white"  href="#">
             Explore
           </a>
           <img class="bg-white rounded-full p-3 ml-2 mr-0 mt-2 mb-2"  src="./image/arrow.svg" alt="">
@@ -36,26 +43,30 @@
       </div>
 
 
-      <div id="wwa" class="flex md:flex-row flex-col mx-20 mb-30 ">
+      <div id="wwa" class="flex md:flex-row flex-col mx-20 my-20 ">
         <div class="flex flex-col gap-10">
           <h1 class="text-5xl font-bold">
           Who We Are
         </h1>
         <h7 class="text-2xl text-gray-500">
-          Tech Jar Pvt. Ltd. is a leading It outsourcing company dedicated to providing cutting-edge solutions tailored to meet the unique needs of our clients. With a team of skilled professionals, we strive to exceed expectations and deliver excellence in every project.
-        </h7>
+          The Straw Hat Pirates are a diverse and loyal crew led by Monkey D. Luffy, who dreams of becoming the Pirate King. Each member has
+           their own goal: Zoro wants to be the strongest swordsman, Nami to map the world, Usopp to become a brave warrior, Sanji to find the 
+           All Blue, Chopper to cure all diseases, Robin to uncover the lost history, Franky to build the best ship, Brook to reunite with
+            an old friend, and Jinbe to bring peace between humans and fish-men. Together, they sail the Grand Line in search of adventure,
+             freedom, and the legendary treasure, One Piece.
+            </h7>
         </div>
-          <img class="md:h-120" src="./image/ppl.png" alt="">
+          <img class="md:h-90" src="./image/team.avif" alt="">
       </div>
 
 
-      <div class="flex flex-row mr-110 ml-50 mb-30 justify-between">
+      <div id="what-wd" class="flex flex-row mx-20 mr-90 justify-between">
         <div class="flex flex-col gap-3">
           <h1 class="text-[20px] text-green-700 font-[700]">
             WHAT WE DO
         </h1>
-        <h1 class="text-[30px] font-[750] pr-50">
-            We provide the Perfect Solution to your business growth
+        <h1 class="text-[30px] font-[750]">
+            We provide the Perfect strategy to skip from marines and protect the peoples from different difficult condtions.
         </h1>
         </div>
         <div class="flex flex-row justify-center items-center gap-3">
@@ -63,17 +74,16 @@
           <h1 class="bg-green-300 rounded-full p-5">B</h1>
         </div>
       </div>
-
-      <div id="reason" class="flex flex-col gap-20">
+      <div class="flex flex-col gap-20 my-20">
         <h1 class="flex justify-center text-[50px] font-[1000]">
           The reasons to choose Us
         </h1>
-        <div class="grid grid-cols-3 ml-60 mr-50 gap-20">
-          <div class="flex flex-col items-center">
+        <div class="grid grid-cols-3 mx-50 gap-20">
+          <div class="flex flex-col items-center justify-center">
             <h1 class="font-[800] text-[45px] text-green-900">
             1M+
           </h1>
-          <p class="font-[500] text-gray-500 text-[15px]">
+          <p class="font-[500] text-gray-500 text-[15px] text-center">
             Lines of code
           </p>
           </div>
@@ -91,7 +101,7 @@
             <h1 class="font-[800] text-[45px] text-green-900">
             20+
           </h1>
-          <p class="flex items-center font-[500] text-gray-500 text-[15px]">
+          <p class="flex items-center font-[500] text-gray-500 text-[15px] text-center">
             Staff with expertise in web and mobile application
           </p>
           </div>
@@ -126,12 +136,12 @@
         </div>
       </div>
 
-      <div class="flex flex-row mr-110 ml-50 mb-10 mt-30 justify-between">
+      <div class="flex flex-row mx-20 mr-110 my-20 justify-between">
         <div class="flex flex-col gap-3">
           <h1 class="text-[20px] text-green-700 font-[700]">
            OUR TEAM
         </h1>
-        <h1 class="text-[30px] font-[750] pr-50">
+        <h1 class="text-[30px] font-[750]">
             We provide the Perfect Solution to your business growth
         </h1>
         </div>
@@ -141,9 +151,9 @@
         </div>
       </div>
 
-      <div id="team" class="grid grid-cols-3 ml-50 mr-50 gap-10 mb-30" >
+      <div id="team" class="grid grid-cols-3 mx-50 gap-10 mb-20" >
         <div class="flex flex-col items-center">
-          <img class="w-90 rounded-full" src="./image/luffy.jpeg" alt="">
+          <img class="w-60 rounded-full" src="./image/luffy.jpeg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
           Leader of the group
         </p>
@@ -153,7 +163,7 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <img class="w-90 rounded-full" src="./image/zoro.jpeg" alt="">
+          <img class="w-60 rounded-full" src="./image/zoro.jpeg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
           Shwordsman of the group
         </p>
@@ -163,7 +173,7 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <img class="w-90 rounded-full" src="./image/nami.jpg" alt="">
+          <img class="w-60 rounded-full" src="./image/nami.jpg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
           Navigator of the group
         </p>
@@ -173,7 +183,7 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <img class="w-90 rounded-full" src="./image/uta.jpg" alt="">
+          <img class="w-60 rounded-full" src="./image/uta.jpg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
           Singer
         </p>
@@ -183,7 +193,7 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <img class="w-90 rounded-full" src="./image/ace.jpg" alt="">
+          <img class="w-60 rounded-full" src="./image/ace.jpg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
           Brother of luffy
         </p>
@@ -193,7 +203,7 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <img class="w-90 rounded-full" src="./image/jimbei.jpg" alt="">
+          <img class="w-60 rounded-full" src="./image/jimbei.jpg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
           1st son of the sea
         </p>
@@ -203,8 +213,13 @@
         </div>
       </div>
 
-        <div id="footer" class="flex flex-row pt-10 pb-10 w-full justify-between bg-black">
-          <img class="h-10 ml-50" src="image/techjar-logo.png" alt="">
+        <div id="footer" class="flex flex-row py-10 w-full justify-between bg-black">
+          <div class="flex flex-col items-center ml-30 bg-black rounded-2xl">
+        <a href="#index.html">
+        <img class="logo h-25 rounded-full" src="./image/flag.jpg" alt="No picture found">
+      </a>
+      <h1 class="text-white">Strawhats</h1>
+      </div>
           <div>
           </div>
           <div class="flex flex-col gap-3">
@@ -213,11 +228,10 @@
             </h1>
             <div class="flex flex-col ">
               <a class="text-[18px] text-white" href="#">Home</a>
-              <a class="text-[18px] text-white" href="#">Who we are</a>
-              <a class="text-[18px] text-white" href="#">What we do</a>
-              <a class="text-[18px] text-white" href="#">Reasons to choose us</a>
+              <a class="text-[18px] text-white" href="#wwa">Who we are</a>
+              <a class="text-[18px] text-white" href="#what-wd">What we do</a>
               <a class="text-[18px] text-white" href="#">Our Portfolio</a>
-              <a class="text-[18px] text-white" href="#">Our team</a>
+              <a class="text-[18px] text-white" href="#team">Our team</a>
             </div>
           </div>
 
