@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Dev</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="p-0 m-0">
-    <img id="scroll" class="h-40 hidden fixed bottom-6 right-6 " src="./image/arro.png" alt="">
-    <div id="navbar" class=" flex flex-row justify-between items-center p-5 sticky top-0">
-      <div class="flex flex-col items-center ml-30 bg-black rounded-2xl">
+
+    <img id="scroll" class="h-20 hidden fixed bottom-6 right-6 arrow" src="./image/arro.png" alt="">
+
+
+    <div id="navbar" class=" flex flex-row justify-between items-center p-5 sticky top-0 h-20 bg-gray-200">
+      <div class="flex flex-col items-center ml-30 justify-center">
         <a href="#index.html">
-        <img class="logo h-25 rounded-full" src="./image/flag.jpg" alt="No picture found">
-      </a>
-      <h1 class="text-white">Strawhats</h1>
+        <img class="logo h-25" src="./image/logo.png" alt="No picture found">
+        </a>
       </div>
       
       <div class="flex flex-row gap-10">
         <a class="text-[20px]" href="#">Home</a>
-        <a class="text-[20px]" href="#wwa">About us</a>
+        <a class="text-[20px] scroll-smooth" href="#wwa">About us</a>
         <a class="text-[20px]" href="#what-wd">Service</a>
         <a class="text-[20px]" href="#reason">Our Portfolio</a>
         <a class="text-[20px]" href="#team">Our team</a>
       </div>
-      <a class="bg-black font-[500] p-4 mr-30 rounded-2xl " href="#footer">
-        <h1 class="text-white text-[25px]">
-      Contact Us
+      <a class="bg-black font-[700] p-4 mr-30 rounded-2xl " href="#footer">
+        <h1 class="text-white text-[10px]">
+          Contact Us
         </h1>
       </a>
       </div>
@@ -34,51 +37,52 @@
         <h1 class="flex text-[50px] font-bold max-w-300 justify-center text-center">
           If your goal is to become the King of the Pirates, then I refuse to lose to you!
         </h1>
-        <div class="flex flex-row bg-green-600 pl-7 pr-7 rounded-full items-center justify-center ">
-          <a class="flex text-4xl font-[500] text-white"  href="#">
-            Explore
-          </a>
-          <img class="bg-white rounded-full p-3 ml-2 mr-0 mt-2 mb-2"  src="./image/arrow.svg" alt="">
-        </div>
+        <a class="bg-green-800 rounded-full items-center"  href="#wwa">
+            <div class="flex text-4xl font-[500] text-white px-7 items-center p-3 gap-4">
+              <div class="">
+                Explore
+              </div>
+              <div>
+                <img class="bg-white rounded-full p-3"  src="./image/arrow.svg" alt="">
+              </div>
+          </div>
+        </a>
       </div>
 
 
-      <div id="wwa" class="flex md:flex-row flex-col mx-20 my-20 ">
-        <div class="flex flex-col gap-10">
+      <div id="wwa" class="flex md:flex-row flex-col mx-20 my-20 pt-20 ">
+        <div class="flex flex-col gap-5">
           <h1 class="text-5xl font-bold">
           Who We Are
         </h1>
         <h7 class="text-2xl text-gray-500">
           The Straw Hat Pirates are a diverse and loyal crew led by Monkey D. Luffy, who dreams of becoming the Pirate King. Each member has
-           their own goal: Zoro wants to be the strongest swordsman, Nami to map the world, Usopp to become a brave warrior, Sanji to find the 
-           All Blue, Chopper to cure all diseases, Robin to uncover the lost history, Franky to build the best ship, Brook to reunite with
-            an old friend, and Jinbe to bring peace between humans and fish-men. Together, they sail the Grand Line in search of adventure,
-             freedom, and the legendary treasure, One Piece.
+           their own goal.
             </h7>
         </div>
           <img class="md:h-90" src="./image/team.avif" alt="">
       </div>
 
 
-      <div id="what-wd" class="flex flex-row mx-20 mr-90 justify-between">
+      <div id="what-wd" class="flex flex-row mx-20 pt-20 justify-between">
         <div class="flex flex-col gap-3">
           <h1 class="text-[20px] text-green-700 font-[700]">
             WHAT WE DO
         </h1>
         <h1 class="text-[30px] font-[750]">
-            We provide the Perfect strategy to skip from marines and protect the peoples from different difficult condtions.
+            We provide the Perfect strategy to skip from marines and protect the peoples from different difficult conditions.
         </h1>
         </div>
-        <div class="flex flex-row justify-center items-center gap-3">
-          <h1 class="bg-gray-200 rounded-full p-5">A</h1>
-          <h1 class="bg-green-300 rounded-full p-5">B</h1>
-        </div>
+        <!-- <div class="flex flex-row justify-center items-center gap-3">
+          <img class="rounded-full h-25" src="./image/lside-arrow.png" alt="">
+          <img class="rounded-full h-25" src="./image/rside-arrow.png" alt="">
+        </div> -->
       </div>
       <div class="flex flex-col gap-20 my-20">
         <h1 class="flex justify-center text-[50px] font-[1000]">
           The reasons to choose Us
         </h1>
-        <div class="grid grid-cols-3 mx-50 gap-20">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-40 gap-20">
           <div class="flex flex-col items-center justify-center">
             <h1 class="font-[800] text-[45px] text-green-900">
             1M+
@@ -136,7 +140,7 @@
         </div>
       </div>
 
-      <div class="flex flex-row mx-20 mr-110 my-20 justify-between">
+      <div id="team" class="flex flex-row mx-20 py-20 justify-between">
         <div class="flex flex-col gap-3">
           <h1 class="text-[20px] text-green-700 font-[700]">
            OUR TEAM
@@ -145,13 +149,13 @@
             We provide the Perfect Solution to your business growth
         </h1>
         </div>
-        <div class="flex flex-row justify-center items-center gap-3">
-          <h1 class="bg-gray-200 rounded-full p-5">A</h1>
-          <h1 class="bg-green-300 rounded-full p-5">B</h1>
-        </div>
+        <!-- <div class="flex flex-row justify-center items-center gap-3">
+          <img class="rounded-full h-25" src="./image/lside-arrow.png" alt="">
+          <img class="rounded-full h-25" src="./image/rside-arrow.png" alt="">
+        </div> -->
       </div>
 
-      <div id="team" class="grid grid-cols-3 mx-50 gap-10 mb-20" >
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1  mx-30 gap-10 mb-20" >
         <div class="flex flex-col items-center">
           <img class="w-60 rounded-full" src="./image/luffy.jpeg" alt="">
         <p class="text-[20px] font-[700] text-green-800">
@@ -164,17 +168,17 @@
 
         <div class="flex flex-col items-center">
           <img class="w-60 rounded-full" src="./image/zoro.jpeg" alt="">
-        <p class="text-[20px] font-[700] text-green-800">
-          Shwordsman of the group
+        <p class="text-[20px] font-[700] text-green-800 text-center">
+          Swordsman of the group
         </p>
-        <h1 class="text-[30px] font-[300]">
+        <h1 class="text-[30px] font-[300] text-center">
           RORONAOA ZORO
         </h1>
         </div>
 
         <div class="flex flex-col items-center">
           <img class="w-60 rounded-full" src="./image/nami.jpg" alt="">
-        <p class="text-[20px] font-[700] text-green-800">
+        <p class="text-[20px] font-[700] text-green-800 text-center">
           Navigator of the group
         </p>
         <h1 class="text-[30px] font-[300]">
@@ -184,49 +188,75 @@
 
         <div class="flex flex-col items-center">
           <img class="w-60 rounded-full" src="./image/uta.jpg" alt="">
-        <p class="text-[20px] font-[700] text-green-800">
+        <p class="text-[20px] font-[700] text-green-800 text-center">
           Singer
         </p>
-        <h1 class="text-[30px] font-[300]">
+        <h1 class="text-[30px] font-[300] text-center">
          UTA
         </h1>
         </div>
 
         <div class="flex flex-col items-center">
           <img class="w-60 rounded-full" src="./image/ace.jpg" alt="">
-        <p class="text-[20px] font-[700] text-green-800">
+        <p class="text-[20px] font-[700] text-green-800 text-center">
           Brother of luffy
         </p>
-        <h1 class="text-[30px] font-[300]">
+        <h1 class="text-[30px] font-[300] text-center">
           ACE
         </h1>
         </div>
 
         <div class="flex flex-col items-center">
           <img class="w-60 rounded-full" src="./image/jimbei.jpg" alt="">
-        <p class="text-[20px] font-[700] text-green-800">
+        <p class="text-[20px] font-[700] text-green-800 text-center">
           1st son of the sea
         </p>
-        <h1 class="text-[30px] font-[300]">
+        <h1 class="text-[30px] font-[300] text-center">
           JIMBEI
         </h1>
         </div>
       </div>
+      <div class="flex flex-row w-full justify-between px-40 py-10 ">
+          <div class="flex flex-col gap-10 ">
+            <div>
+              <h1 class="text-[50px] font-[900]">Get in <span class="text-[rgb(0_140_130)]">Touch</span></h1>
+            </div>
+            <div>
+              <form class="flex flex-col gap-5" action="">
+                <input class="border-1 p-3 w-120 text-[20px]" type="text" id="html" placeholder="Name" name="fav_language">
+                <input class="border-1 p-3 w-120 text-[20px]" type="text" id="html" placeholder="Email" name="fav_language">
+                <input class="border-1 p-3 w-120 text-[20px]" type="number" id="html" placeholder="Phone Number" name="fav_language">
 
-        <div id="footer" class="flex flex-row py-10 w-full justify-between bg-black">
-          <div class="flex flex-col items-center ml-30 bg-black rounded-2xl">
-        <a href="#index.html">
-        <img class="logo h-25 rounded-full" src="./image/flag.jpg" alt="No picture found">
-      </a>
-      <h1 class="text-white">Strawhats</h1>
-      </div>
-          <div>
+                <select class="border-1 p-3 w-120 text-[20px]" name="my-form" id="html">
+                  <option value="How did you find Us">How did you find Us</option>
+                <option value="From Linkedin">From Linkedin</option>
+                <option value="From Facebook">From Facebook</option>
+                <option value="From Instagram">From Instagram</option>
+                <option value="From Somewhere Else">From Somewhere Else</option>
+                </select>
+                <input class="border-1 p-3 w-120 bg-[rgb(0_140_130)] font-[800] text-[20px] text-white" type="button" value="Send" id="html">
+
+
+              </form>
+
+            </div>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="bg-gray-200 p-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28274.87862308866!2d85.43936466731458!3d27.644336894793824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0feb35ee174d%3A0x78156cc4e0ae9068!2sNangkhel!5e0!3m2!1sen!2snp!4v1753886872414!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+
+        <div id="footer" class="flex lg:flex-row max-md:flex-col py-10 w-full justify-between bg-black">
+          <a href="#">
+          <div class="flex flex-col items-center ml-30">
+        <img class="h-25" src="./image/logo.png" alt="No picture found">
+      </div>
+    </a>
+          <div class="flex flex-col gap-3 max-md:items-center">
             <h1 class="text-[30px] font-[700] text-white">
               Quick Links
             </h1>
-            <div class="flex flex-col ">
+            <div class="flex flex-col">
               <a class="text-[18px] text-white" href="#">Home</a>
               <a class="text-[18px] text-white" href="#wwa">Who we are</a>
               <a class="text-[18px] text-white" href="#what-wd">What we do</a>
@@ -235,16 +265,17 @@
             </div>
           </div>
 
-          <div class="flex flex-col mr-50 gap-3">
+          <div class="flex flex-col gap-3 mr-30">
             <h1 class="text-[30px] font-[700] text-white">
               Contact
             </h1>
-            <div>
+            <div class="">
               <h1 class="text-white text-[18px]">-9849695781</h1>
               <p class="text-white text-[18px]">-banmala@gmail.com</p>
             </div>
           </div>
         </div>
+
     <script src="script.js"></script>
       </body>
       </html>
